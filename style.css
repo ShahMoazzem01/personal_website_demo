@@ -243,6 +243,11 @@ button:hover, #sign  a:hover{
     border-radius: 5px;
 }
 
+.container .downlodCv:hover{
+    background-color: var(--colorThird);
+}
+
+
 .link {
     height: 100%;
     width: 100%;
