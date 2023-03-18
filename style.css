@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+:root{
+    --colorPrimary : #40513B;
+    --colorSecondary: #609966;
+    --colorThird: #9DC08B;
+    --colorFourth: #EDF1D6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--colorThird);
+}
+
+/* --------------------------- Navbar ----------------------------- */
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--colorSecondary);
+    padding: 0.6rem;
+}
+
+nav > h1{
+    font-size: 2rem;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+}
+
+.logo{
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* --------------------------- Sign In Page----------------------------- */
+
+#form{
+    background-color: var(--colorFourth);
+    border: 1px solid var(--colorPrimary);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#form select{
+    align-self: flex-end;
+    border: 1px solid var(--colorPrimary);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+
+}
+
+#form > h1{
+    margin-bottom: 25px;
+}
+
+#form > hr{
+    border-top: 1px solid black;
+    width: 100px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+#form > label{
+    align-self:flex-start;
+    font-size: 1.1rem;
+
+}
+
+#form > input{
+    width: 100%;
+    margin: 10px;
+    padding: 12px;
+    border: 1px solid var(--colorPrimary);
+    border-radius: 5px;
+}
+
+#form  a{
+    align-self: flex-end;
+    text-decoration: none;
+    color: var(--colorSecondary);
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: var(--colorThird);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+#form > button{
+    background-color: var(--colorSecondary);
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+button:hover, #sign  a:hover{
+    opacity: 85%;
+}
+
+/* ------------------------------registration form --------------------------------- */
+.reg a{
+    align-self: flex-start !important;
+}
+
+/* --------------------------hone --------- */
+
+.bg-img{
+    background-image: url("/bg.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 100vh;
+}
+
+.menu{
+    background-color: var(--colorThird);
+    width: 20%;
+    max-width: 200px;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.menu ul li{
+    width: 100%;
+    list-style-type: none;
+    padding: 20px 10px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    font-size: large;
+}
+
+.menu ul li:hover,a:hover{
+   background-color: var(--colorSecondary);
+   color: var(--colorFourth);
+}
+
+.container{
+    position:absolute;
+    width: 600px;
+    height: 600px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    border: 2px solid var(--colorPrimary);
+    border-radius: 15px;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    background-color: var(--colorFourth);
+    filter: alpha(opacity=60);
+     /* IE */
+    -moz-opacity: 0.6;
+    /* Mozilla */
+    opacity: 0.6;
+    /* CSS3 */
+    position: absolute;
+    border-radius: 15px;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+.pic{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pic img{
+    width: 60%;
+    border: 2px solid var(--colorSecondary);
+    border-radius: 15%;
+    margin-top: 5%;
+}
+
+.pic .des{
+    color: var(--colorPrimary);
+    margin-top: 10px;
+    font-size: large;
+}
