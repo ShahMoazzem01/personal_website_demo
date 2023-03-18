@@ -8,31 +8,67 @@
     <title>Welcome to Rony's World</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">SHAH MOAZZEM</div>
-        <h1>Welcome to My Site</h1>
-        <button onclick="location.href='/register.html';">Register</button>
-    </nav>
-    <form id="form" action="#">
-        <select>
-            <option value="en">English</option>
-            <option value="bm">বাংলা</option>
-        </select>
-        <h1>Sign in</h1>
-        <hr>
-        <label for="userName">User name</label>
-        <input type="text">
-        <label for="password">Password</label>
-        <input type="password">
-        <a href="">Forgot Password?</a>
-        <Button type="submit" onclick="location.href='/home.html';">Sign In</Button>
-        <p>New User? <a href="/register.html">Register</a></p>
-    </form>
-    <script>
-        const form = document.getElementById('form');
-        form.addEventListener('submit',e=>{
-            e.preventDefault();
-        })
-    </script>
+    <div class="bg-img">
+        <nav>
+            <div class="logo">SHAH MOAZZEM</div>
+            <h1>Welcome to My Site</h1>
+            <button onclick="location.href='/signIn.html';">Sign Out</button>
+        </nav>
+        <menu class="menu">
+            <ul>
+                <li id="liHome">Home</li>
+                <li id="liCv">My CV</li>
+                <li id="liPic">My Picture</li>
+                <li id="liLink">Important Link</li>
+            </ul>
+        </menu>
+
+        <div class="container">
+
+            <div class="bg" style="z-index: -1;"></div>
+            <div class="home" style="display: block;">
+                <h1>Internet Programming Assignment</h1>
+                <h2>Submitted By:</h2>
+                <p>Shah Moazzem</p>
+                <p>ID:2201081097</p>
+                <p>Batch: 50 A</p>
+                <h2>Submitted To:</h2>
+                <p>Uttam Kumar Dey</p>
+                <p>Assistant Professor and Co-Ordinator</p>
+                <p>CSE Department,Uttara University</p>
+            </div>
+            <div class="pic" style="display: none;">
+                <img src="img/pic.jpg" alt="Pic">
+                <div class="des">
+                    <h3>SHAH MOAZZEM</h3>
+                    <p>ID:2201081097</p>
+                    <p>Batch:50 A</p>
+                    <p>Semester:Spring-23</p>
+                    <p>BSc in CSE</p>
+                    <p>Uttara University</p>
+                </div>
+            </div>
+            <div class="cv" style="display: none;">
+                <iframe src="RonyCv.pdf" frameborder="0""></iframe>
+                <a class="downlodCv" href="RonyCv.pdf" download>Download CV</a>
+            </div>
+            <div class="link" style="display: none;">
+                <h1>Important Links</h1>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100071443173908">My Facebook ID</a></li>
+                    <li><a href="https://uttarauniversity.edu.bd/"> Uttara University</a></li>
+                    <li><a href="https://www.w3schools.com/html/">Learn Html</a></li>
+                    <li><a href="https://www.w3schools.com/css/">Learn Css</a></li>
+                    <li><a href="https://www.w3schools.com/js/">Learn JavaScript</a></li>
+                    <li><a href="https://www.w3schools.com/php/">Learn Php</a></li>
+                </ul>
+             </div>
+        </div>
+
+
+
+
+    </div>
+    <script src="/home.js"></script>
 </body>
 </html>
