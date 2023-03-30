@@ -9,9 +9,12 @@
 </head>
 <body>
     <nav>
-        <div onclick="location.href='/index.html';" class="logo">SHAH MOAZZEM</div>
+        <div onclick="location.href='index.html';" class="logo">SHAH MOAZZEM</div>
         <h1>Welcome to My Site</h1>
-        <button onclick="location.href='/signIn.html';">Sign In</button>
+        <div>
+            <button onclick="location.href='signIn.html';">Sign In</button>
+            <button onclick="location.href='index.html';">Home</button>
+        </div>
     </nav>
     <form id="form" class="reg">
         <select>
@@ -30,8 +33,8 @@
         <input type="password">
         <label for="confirmPassword">Confirm Password</label>
         <input type="password">
-        <a href="/signIn.html"><< Back to Login</a>
-        <Button type="submit" onclick="location.href='/index.html';">Register</Button>
+        <a href="signIn.html"><< Back to Login</a>
+        <Button type="submit" onclick="location.href='index.html';">Register</Button>
     </form>
     <script>
         const form = document.getElementById('form');
